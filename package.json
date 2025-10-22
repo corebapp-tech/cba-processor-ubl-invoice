@@ -1,0 +1,17 @@
+{
+  "name": "@cba/ubl-invoice",
+  "main": "main.js",
+  "license": "MIT",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "cba-processor"
+  ],
+  "author": "corebapp-tech",
+  "description": "",
+  "dependencies": {
+    "xmlbuilder2": "^3.1.1"
+  }
+}
