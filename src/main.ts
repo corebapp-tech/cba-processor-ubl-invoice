@@ -1,6 +1,6 @@
 import { create } from 'xmlbuilder2';
 
-import { BaseProcessor } from '../../../core/processor/BaseProcessor';
+import { BaseHttpProcessor } from '../../../core/processor/BaseHttpProcessor';
 import {
   Response,
   Request,
@@ -9,7 +9,7 @@ import {
 import { InputCastingService } from '../../../core/service/InputCastingService';
 import { PodService, PodPushData } from '../../../core/service/PodService';
 
-class UblInvoiceProcessor extends BaseProcessor {
+class UblInvoiceProcessor extends BaseHttpProcessor {
   private validateAddress(address: Address, fieldName: string): void {
     this.validateRequired(address, fieldName);
     if (address) {
